@@ -19,78 +19,110 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxm-ED-2h4">
-                                <rect key="frame" x="-51" y="-20" width="500" height="757"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hHr-z0-e7i">
-                                        <rect key="frame" x="50" y="19" width="375" height="384"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hHr-z0-e7i">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r7s-uV-jhN">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxT-LU-hJe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_001" translatesAutoresizingMaskIntoConstraints="NO" id="uxT-LU-hJe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="221"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-gU-aS4">
-                                                        <rect key="frame" x="125" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_002" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-gU-aS4">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="221"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-oe-Ybz">
-                                                        <rect key="frame" x="250" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_003" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-oe-Ybz">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="221"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4St-pJ-YM3">
-                                                <rect key="frame" x="0.0" y="128" width="375" height="128"/>
+                                                <rect key="frame" x="0.0" y="223" width="375" height="221"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iOZ-MY-c0e">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_004" translatesAutoresizingMaskIntoConstraints="NO" id="iOZ-MY-c0e">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="221"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H9R-tR-ebq">
-                                                        <rect key="frame" x="125" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_005" translatesAutoresizingMaskIntoConstraints="NO" id="H9R-tR-ebq">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="221"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXV-1x-w6f">
-                                                        <rect key="frame" x="250" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_006" translatesAutoresizingMaskIntoConstraints="NO" id="JXV-1x-w6f">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="221"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SU4-gh-l8e">
-                                                <rect key="frame" x="0.0" y="256" width="375" height="128"/>
+                                                <rect key="frame" x="0.0" y="446" width="375" height="221"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i8F-Ax-XiZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_007" translatesAutoresizingMaskIntoConstraints="NO" id="i8F-Ax-XiZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="221"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZu-5Z-bO4">
-                                                        <rect key="frame" x="125" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_008" translatesAutoresizingMaskIntoConstraints="NO" id="tZu-5Z-bO4">
+                                                        <rect key="frame" x="125" y="0.0" width="125" height="221"/>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5lM-gx-7D4">
-                                                        <rect key="frame" x="250" y="0.0" width="125" height="128"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_part_009" translatesAutoresizingMaskIntoConstraints="NO" id="5lM-gx-7D4">
+                                                        <rect key="frame" x="250" y="0.0" width="125" height="221"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Dgl-ox-kd4" appends="YES" id="x6e-At-Ccx"/>
+                                        </connections>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.045085607010000001" green="0.0" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hHr-z0-e7i" secondAttribute="trailing" constant="75" id="7Fj-3X-hIL"/>
-                                    <constraint firstAttribute="bottom" secondItem="hHr-z0-e7i" secondAttribute="bottom" constant="354" id="7In-IH-q7b"/>
-                                    <constraint firstItem="hHr-z0-e7i" firstAttribute="leading" secondItem="Mxm-ED-2h4" secondAttribute="leading" constant="50" id="cbu-Q4-GYa"/>
-                                    <constraint firstItem="hHr-z0-e7i" firstAttribute="top" secondItem="Mxm-ED-2h4" secondAttribute="top" constant="19" id="fKp-Uw-ZIP"/>
+                                    <constraint firstAttribute="bottom" secondItem="hHr-z0-e7i" secondAttribute="bottom" id="Ofs-YQ-uyb"/>
+                                    <constraint firstItem="hHr-z0-e7i" firstAttribute="top" secondItem="Mxm-ED-2h4" secondAttribute="top" id="RQs-ld-XVE"/>
+                                    <constraint firstItem="hHr-z0-e7i" firstAttribute="leading" secondItem="Mxm-ED-2h4" secondAttribute="leading" id="Whr-rN-4uA"/>
+                                    <constraint firstAttribute="trailing" secondItem="hHr-z0-e7i" secondAttribute="trailing" id="uzz-oc-iW8"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Mxm-ED-2h4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-40" id="bX0-C5-nCV"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Mxm-ED-2h4" secondAttribute="bottom" constant="-70" id="fy6-fI-EFQ"/>
-                            <constraint firstItem="Mxm-ED-2h4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-67" id="m7S-6n-2xH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Mxm-ED-2h4" secondAttribute="trailing" constant="-90" id="yDS-Mc-yhz"/>
+                            <constraint firstItem="Mxm-ED-2h4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I2Y-Ql-0Jd"/>
+                            <constraint firstAttribute="trailing" secondItem="Mxm-ED-2h4" secondAttribute="trailing" id="Qlg-ed-p2e"/>
+                            <constraint firstAttribute="bottom" secondItem="Mxm-ED-2h4" secondAttribute="bottom" id="kKo-1U-MI5"/>
+                            <constraint firstItem="Mxm-ED-2h4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qQV-gw-FDl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="wholeStackView" destination="hHr-z0-e7i" id="z44-6g-PHq"/>
+                        <outletCollection property="ImageViewsForLion" destination="uxT-LU-hJe" collectionClass="NSMutableArray" id="3ju-Lk-UgS"/>
+                        <outletCollection property="ImageViewsForLion" destination="NNg-gU-aS4" collectionClass="NSMutableArray" id="mq8-Va-DdQ"/>
+                        <outletCollection property="ImageViewsForLion" destination="gKe-oe-Ybz" collectionClass="NSMutableArray" id="3w5-h1-Fjv"/>
+                        <outletCollection property="ImageViewsForLion" destination="iOZ-MY-c0e" collectionClass="NSMutableArray" id="6LM-nA-CF9"/>
+                        <outletCollection property="ImageViewsForLion" destination="H9R-tR-ebq" collectionClass="NSMutableArray" id="K7n-E8-5hO"/>
+                        <outletCollection property="ImageViewsForLion" destination="JXV-1x-w6f" collectionClass="NSMutableArray" id="GsS-zA-YKI"/>
+                        <outletCollection property="ImageViewsForLion" destination="i8F-Ax-XiZ" collectionClass="NSMutableArray" id="Hct-4N-HuZ"/>
+                        <outletCollection property="ImageViewsForLion" destination="tZu-5Z-bO4" collectionClass="NSMutableArray" id="rXa-Ve-GEO"/>
+                        <outletCollection property="ImageViewsForLion" destination="5lM-gx-7D4" collectionClass="NSMutableArray" id="xtc-rz-a6U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Dgl-ox-kd4">
+                    <connections>
+                        <action selector="WhenTappedOnLion:" destination="BYZ-38-t0r" id="G0j-74-wIQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image_part_001" width="89" height="89"/>
+        <image name="image_part_002" width="90" height="89"/>
+        <image name="image_part_003" width="89" height="89"/>
+        <image name="image_part_004" width="89" height="90"/>
+        <image name="image_part_005" width="90" height="90"/>
+        <image name="image_part_006" width="89" height="90"/>
+        <image name="image_part_007" width="89" height="89"/>
+        <image name="image_part_008" width="90" height="89"/>
+        <image name="image_part_009" width="89" height="89"/>
+    </resources>
 </document>
