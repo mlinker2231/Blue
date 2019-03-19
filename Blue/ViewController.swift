@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     var counter = 0
-    @IBOutlet weak var wholeStackView: UIStackView!
     @IBOutlet var ImageViewsForLion: [UIImageView]!
+    @IBOutlet weak var realView: UIView!
     var firstSelect = true
     var firstImage = UIImageView()
     var secondImage = UIImageView()
@@ -21,31 +21,31 @@ class ViewController: UIViewController {
        for image in ImageViewsForLion {
             switch counter {
             case 0:
-                image.tag = 11
+                image.tag = 33
                 counter += 1
             case 1:
-                image.tag = 12
-                counter += 1
-            case 2:
-                image.tag = 13
-                counter += 1
-            case 3:
-                image.tag = 21
-                counter += 1
-            case 4:
                 image.tag = 22
                 counter += 1
-            case 5:
+            case 2:
+                image.tag = 12
+                counter += 1
+            case 3:
+                image.tag = 32
+                counter += 1
+            case 4:
                 image.tag = 23
+                counter += 1
+            case 5:
+                image.tag = 21
                 counter += 1
             case 6:
                 image.tag = 31
                 counter += 1
             case 7:
-                image.tag = 32
+                image.tag = 13
                 counter += 1
             case 8:
-                image.tag = 33
+                image.tag = 11
             default:
                 print("you broke it")
             }
@@ -53,9 +53,10 @@ class ViewController: UIViewController {
  
     }
     
-    @IBAction func WhenTappedOnLion(_ sender: UITapGestureRecognizer) {
-        print("clicked")
-        let selectedPoint =  sender.location(in: wholeStackView)
+ 
+    @IBAction func whenTappedOnLion(_ sender: UITapGestureRecognizer) {
+    print("clicked")
+        let selectedPoint =  sender.location(in: realView)
         print(selectedPoint)
         for image in ImageViewsForLion {
             switch image.tag {
@@ -64,7 +65,7 @@ class ViewController: UIViewController {
                     firstImage = image
                     firstSelect = false
                     print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
+                }else if image.frame.contains(selectedPoint), image.tag {
                     secondImage = image
                     firstSelect = true
                     print("\(image.tag)" + "is supposed to be second image")
@@ -93,7 +94,7 @@ class ViewController: UIViewController {
                     swapPieces(imageView1: firstImage, imageView2: secondImage)
                 }
             case 21:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 200).contains(selectedPoint), firstSelect {
+                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
                     firstImage = image
                     firstSelect = false
                     print("\(image.tag)" + "supposed to be first image")
@@ -104,7 +105,7 @@ class ViewController: UIViewController {
                     swapPieces(imageView1: firstImage, imageView2: secondImage)
                 }
             case 22:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 200).contains(selectedPoint), firstSelect {
+                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
                     firstImage = image
                     firstSelect = false
                     print("\(image.tag)" + "supposed to be first image")
@@ -115,7 +116,7 @@ class ViewController: UIViewController {
                     swapPieces(imageView1: firstImage, imageView2: secondImage)
                 }
             case 23:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 200).contains(selectedPoint), firstSelect {
+                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
                     firstImage = image
                     firstSelect = false
                     print("\(image.tag)" + "supposed to be first image")
@@ -126,7 +127,7 @@ class ViewController: UIViewController {
                     swapPieces(imageView1: firstImage, imageView2: secondImage)
                 }
             case 31:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 200).contains(selectedPoint), firstSelect {
+                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
                     firstImage = image
                     firstSelect = false
                     print("\(image.tag)" + "supposed to be first image")
@@ -137,7 +138,7 @@ class ViewController: UIViewController {
                     swapPieces(imageView1: firstImage, imageView2: secondImage)
                 }
             case 32:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 400).contains(selectedPoint), firstSelect {
+                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
                     firstImage = image
                     firstSelect = false
                     print("\(image.tag)" + "supposed to be first image")
@@ -148,7 +149,7 @@ class ViewController: UIViewController {
                     swapPieces(imageView1: firstImage, imageView2: secondImage)
                 }
             case 33:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 400).contains(selectedPoint), firstSelect {
+                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
                     firstImage = image
                     firstSelect = false
                     print("\(image.tag)" + "supposed to be first image")
