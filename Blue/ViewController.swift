@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var firstSelect = true
     var firstImageView = UIImageView()
     var secondImage = UIImageView()
-    var arrayOfImages: [UIImage] = [UIImage(named: "image_part_001")!,UIImage(named: "image_part_002")!,UIImage(named: "image_part_003")!,UIImage(named: "image_part_004")!,UIImage(named: "image_part_005")!,UIImage(named: "image_part_006")!,UIImage(named: "image_part_007")!,UIImage(named: "image_part_008")!,UIImage(named: "image_part_009")!,]
+    var arrayOfImages: [UIImage] = [UIImage(named: "image_part_001")!,UIImage(named: "image_part_002")!,UIImage(named: "image_part_003")!,UIImage(named: "image_part_004")!,UIImage(named: "image_part_005")!,UIImage(named: "image_part_006")!,UIImage(named: "image_part_007")!,UIImage(named: "image_part_008")!,UIImage(named: "image_part_009")!]
     override func viewDidLoad() {
         super.viewDidLoad()
         print(ImageViewsForLion.count)
@@ -211,6 +211,7 @@ class ViewController: UIViewController {
             var randomImageIndex = arrayOfImages.lastIndex(of: randomImage)!
             arrayOfImages.remove(at: randomImageIndex)
         }
+        arrayOfImages = [UIImage(named: "image_part_001")!,UIImage(named: "image_part_002")!,UIImage(named: "image_part_003")!,UIImage(named: "image_part_004")!,UIImage(named: "image_part_005")!,UIImage(named: "image_part_006")!,UIImage(named: "image_part_007")!,UIImage(named: "image_part_008")!,UIImage(named: "image_part_009")!,]
     }
     
 }
