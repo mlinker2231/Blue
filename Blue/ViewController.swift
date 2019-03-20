@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet var ImageViewsForLion: [UIImageView]!
     @IBOutlet weak var realView: UIView!
     var firstSelect = true
-    var firstImage = UIImageView()
+    var firstImageView = UIImageView()
     var secondImage = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
         print(ImageViewsForLion.count)
-       for image in ImageViewsForLion {
+        for image in ImageViewsForLion {
             switch counter {
             case 0:
                 image.tag = 33
@@ -50,142 +50,151 @@ class ViewController: UIViewController {
                 print("you broke it")
             }
         }
- 
+        
     }
     
- 
+    
     @IBAction func whenTappedOnLion(_ sender: UITapGestureRecognizer) {
-    print("clicked")
+        print("clicked")
         let selectedPoint =  sender.location(in: realView)
         print(selectedPoint)
         for image in ImageViewsForLion {
             switch image.tag {
             case 11:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint), image.tag {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint), (firstImageView.tag == 21 || firstImageView.tag == 12) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 12:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint),  (firstImageView.tag == 22 ||  firstImageView.tag == 13 ||  firstImageView.tag == 11) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 13:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint),  (firstImageView.tag == 12 ||  firstImageView.tag == 23) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 21:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint), (firstImageView.tag == 22 ||  firstImageView.tag == 31 || firstImageView.tag == 11) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 22:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint), (firstImageView.tag == 32 ||  firstImageView.tag == 23 || firstImageView.tag == 21 || firstImageView.tag == 12) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 23:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint), (firstImageView.tag == 22 || firstImageView.tag == 33 || firstImageView.tag == 13) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 31:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint),  (firstImageView.tag == 32 || firstImageView.tag == 21) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 32:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint), (firstImageView.tag == 22 ||  firstImageView.tag == 31 || firstImageView.tag == 33) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             case 33:print("I ran")
-                if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
+            if image.frame.offsetBy(dx: 0, dy: 000).contains(selectedPoint), firstSelect {
+                firstImageView = image
+                firstImageView.tag = image.tag
+                firstSelect = false
+                print("\(image.tag)" + "supposed to be first image")
+            }else if image.frame.contains(selectedPoint),  (firstImageView.tag == 23 || firstImageView.tag == 32) {
+                secondImage = image
+                firstSelect = true
+                print("\(image.tag)" + "is supposed to be second image")
+                swapPieces(imageView1: firstImageView, imageView2: secondImage)
                 }
             default:
                 print("you broke it")
             }
-         /*   if image.tag == 11 || image.tag == 12 || image.tag == 13 {
-                if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint) {
-                    firstImage = image
-                    firstSelect = false
-                    print("\(image.tag)" + "supposed to be first image")
-                }else if image.frame.contains(selectedPoint) {
-                    secondImage = image
-                    firstSelect = true
-                    print("\(image.tag)" + "is supposed to be second image")
-                    swapPieces(imageView1: firstImage, imageView2: secondImage)
-                }
-            }
-      //      print(image.frame.offsetBy(dx: 0, dy: 90))
-      //      print(image.frame)
-            if image.frame.contains(selectedPoint), firstSelect {
-                firstImage = image
-                firstSelect = false
-                print("\(image.tag)" + "supposed to be first image")
-            }else if image.frame.contains(selectedPoint) {
-                secondImage = image
-                firstSelect = true
-                print("\(image.tag)" + "is supposed to be second image")
-                swapPieces(imageView1: firstImage, imageView2: secondImage)
-            } */
+            /*   if image.tag == 11 || image.tag == 12 || image.tag == 13 {
+             if image.frame.offsetBy(dx: 0, dy: 0).contains(selectedPoint) {
+             firstImageView = image firstImageView.tag = image.tag
+             firstSelect = false
+             print("\(image.tag)" + "supposed to be first image")
+             }else if image.frame.contains(selectedPoint) {
+             secondImage = image
+             firstSelect = true
+             print("\(image.tag)" + "is supposed to be second image")
+             swapPieces(imageView1: firstImageView, imageView2: secondImage)
+             }
+             }
+             //      print(image.frame.offsetBy(dx: 0, dy: 90))
+             //      print(image.frame)
+             if image.frame.contains(selectedPoint), firstSelect {
+             firstImageView = image firstImageView.tag = image.tag
+             firstSelect = false
+             print("\(image.tag)" + "supposed to be first image")
+             }else if image.frame.contains(selectedPoint) {
+             secondImage = image
+             firstSelect = true
+             print("\(image.tag)" + "is supposed to be second image")
+             swapPieces(imageView1: firstImageView, imageView2: secondImage)
+             } */
         }
     }
     func swapPieces(imageView1: UIImageView, imageView2: UIImageView) {
@@ -194,6 +203,8 @@ class ViewController: UIViewController {
         imageView1.image = tempImage
         
     }
-
+    @IBAction func whenScrambleButtonClicked(_ sender: UIButton) {
+    }
+    
 }
 
